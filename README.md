@@ -1,1 +1,16 @@
-目前我在使用的一些vim配置，使用时将文件更名为.vimrc或者将文件中的内容直接copy到本地的.vimrc中即可，使用Vundle安装插件
+## vimconfig
+
+A shell script to deploy my vim configuration
+
+
+### install
+
+
+The installation will overwrite your .vimrc file, be sure to backup your existing vim configuration
+
+```
+$ git clone https://github.com/silenceboychen/vimconfig.git
+$ cd vimconfig
+$ ./deploy.sh
+
+```
