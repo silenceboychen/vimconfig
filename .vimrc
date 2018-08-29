@@ -178,6 +178,9 @@ set background=dark
 
 " 定义快捷键的前缀，即<Leader>
 let mapleader=";"
+nnoremap <leader>w :w<CR>
+nnoremap <leader>q :q<CR>
+nnoremap <leader>qq :NERDTreeClose<CR>:wq<CR>
 set number " 显示行号
 set relativenumber " 显示相对行号
 set cursorline " 突出显示当前行
@@ -214,7 +217,8 @@ set wildmenu  " vim 自身命令行模式智能补全
 " 设置 gvim 显示字体
 set guifont=YaHei\ Consolas\ Hybrid\ 11.5
 " 禁止折行
-set nowrap
+" set nowrap
+" set backspace=2 "解决vim中delete无法删除的问题（主要是mac）
 
 " 操作：za，打开或关闭当前折叠；zM，关闭所有折叠；zR，打开所有折叠
 " 基于缩进或语法进行代码折叠
