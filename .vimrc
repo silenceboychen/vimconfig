@@ -176,6 +176,13 @@ set background=dark
 "colorscheme solarized
 " ======配色方案end ===========
 
+" 分屏窗口移动, Smart way to move between windows
+map <C-j> <C-W>j
+map <C-k> <C-W>k
+map <C-h> <C-W>h
+map <C-l> <C-W>l
+
+
 " 定义快捷键的前缀，即<Leader>
 let mapleader=";"
 nnoremap <leader>w :w<CR>
