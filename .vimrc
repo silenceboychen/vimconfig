@@ -233,5 +233,9 @@ set foldmethod=indent
 "set foldmethod=syntax
 " 启动 vim 时关闭折叠代码
 set nofoldenable
+" 设置新文件的编码为 UTF-8
+set encoding=utf-8
+" vimrc文件修改之后自动加载, linux
+autocmd! bufwritepost .vimrc source %
 
 
