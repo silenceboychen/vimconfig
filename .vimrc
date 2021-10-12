@@ -238,4 +238,9 @@ set encoding=utf-8
 " vimrc文件修改之后自动加载, linux
 autocmd! bufwritepost .vimrc source %
 
-
+" 重新打开一个文件时，仍然能够撤销之前的编辑
+set undofile
+" 撤销文件放在用户个人的特定目录下
+set undodir=~/.vim/undodir
+" 禁止备份文件
+set nobackup
