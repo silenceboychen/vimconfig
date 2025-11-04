@@ -48,7 +48,7 @@ let NERDTreeShowHidden=1
 " =======nerdtree 配置end============
 
 " ==========nerdtree-git-plugin配置start =============
-let g:NERDTreeIndicatorMapCustom = {
+let g:NERDTreeGitStatusIndicatorMapCustom = {
     \ "Modified"  : "✹",
     \ "Staged"    : "✚",
     \ "Untracked" : "✭",
@@ -60,7 +60,7 @@ let g:NERDTreeIndicatorMapCustom = {
     \ 'Ignored'   : '☒',
     \ "Unknown"   : "?"
     \ }
-let g:NERDTreeShowIgnoredStatus = 1
+let g:NERDTreeGitStatusShowIgnored = 1
 " ===========nerdtree-git-plugin配置end ================
 
 " =======ctrlp 配置start ===========
@@ -216,8 +216,8 @@ set mouse=a "启用鼠标选项,a为所有模式启用鼠标
 set helplang=cn "设置帮助为中文
 
 ":reg 查看是否包括×和+寄存器,若无需要安装vim-gnome:apt-get install vim-gnome
-set clipboard=unnamedplus "在Vim中copy的所有内容都会上系统剪切板
-"set clipboard=unnamed  mac中使用该配置
+" set clipboard=unnamedplus "在Vim中copy的所有内容都会上系统剪切板
+set clipboard=unnamed " mac中使用该配置
 
 set pastetoggle=<F9> "拷贝模式
 set wildmenu  " vim 自身命令行模式智能补全
